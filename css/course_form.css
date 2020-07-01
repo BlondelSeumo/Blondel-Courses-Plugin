@@ -1,0 +1,213 @@
+/* Write Custom css code here */
+
+/* Section 1 */
+.course-main-section{   border:1px solid #ff8800; padding:30px; }
+
+.course-header-section h3 { font-weight:700; }
+.course_amount_description{ font-size: 17px; font-weight: 400; }
+
+.course-price-box-section { width:100%;     padding-top: 20px; }
+.course-price-box-section .course-price-box {
+	width: 100px;
+	border-radius:5px;
+	background: #ff8800;;
+	border: 1px solid #ff8800;
+	padding: 25px 3px;
+	color:#fff;	
+	text-align: center;	
+	font-weight: 600;
+	font-size: 26px;
+	float:left;
+	margin:2px;
+	cursor: pointer;
+	
+}
+
+.course-price-box-section .course-price-box:hover { 	 background-color:#ffBC00; color:#fff; border:1px solid #ffBC00; }
+.course-price-box-section .active-box{ background-color:#ffBC00; color:#fff; border:1px solid #ffBC00;}
+  
+ 
+.course-clear{ clear:both; }
+.course-price-input-section { padding-top:10px;  }
+.course-price-input-section .confirm-monthly-course{ padding:20px 0px; }
+
+.course-price-input{ max-width:250px !important; }
+
+/* Section 2 */
+.course-personal-detail-section{  border:1px solid #ff8800;  padding:30px; } 
+.course-hr{ background-color: #ccc; border: 0; height: 1px; margin: 0 0 1.41575em; }
+.course-form-row {
+     display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	margin-right: -5px;
+	margin-left: -5px;
+	margin-bottom:10px;
+}
+.course-form-row .custome-half-div {
+    padding-right: 5px;
+    padding-left: 5px;	
+	width: 100%;
+}
+.course-data-form{ margin-top: 10px; }
+.course-data-form label {
+    display: inline-block;
+    margin-bottom: 5px;
+	font-weight:600;
+}
+
+.course-form-control {
+	background-color: white !important;
+	box-shadow: none !important;
+	border-radius: 3px;
+	padding: 10px 10px;
+	margin: 0;
+	border: 1px solid #dfdfdf !important;	
+	font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+	transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;    
+    width: 94%;
+    font-family: 'Montserrat';
+    
+}
+.padding-5{ padding:0px 5px; }
+
+.course-checkbox .container-chk {
+  display: block;
+  position: relative;
+  padding-left: 40px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 17px;
+	color:#333333;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-weight: 400;
+}
+
+/* Hide the browser's default checkbox */
+.course-checkbox .container-chk input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.course-checkbox .checkmark {
+  position: absolute;
+  top: 0;
+  left: 7px;
+  height: 22px;
+  width: 22px;
+    background-color: transparent;
+    border: 1px solid #ff8800;
+}
+
+/* On mouse-over, add a grey background color */
+.course-checkbox .container-chk:hover input ~ .checkmark {
+    background-color: transparent;
+}
+
+/* When the checkbox is checked, add a blue background */
+.course-checkbox .container-chk input:checked ~ .checkmark {
+  background-color: #FF8800;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.course-checkbox .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.course-checkbox .container-chk input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.course-checkbox .container-chk .checkmark:after {
+  left: 6px;
+  top: 1px;
+  width: 7px;
+  height: 13px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+} 
+
+
+.course-custome-btn{
+	border: 1px solid #ff8800;
+    color: #ff8800;
+    border-radius: 5px;
+    float: right;
+	background:none;
+    padding: 15px 35px;
+    font: 600 13px 'Montserrat';
+    text-transform: uppercase;
+   /* margin-left: 25px;*/
+    transition: all 0.6s ease 0s;
+    -o-transition: all 0.6s ease 0s;
+    -moz-transition: all 0.6s ease 0s;
+    -webkit-transition: all 0.6s ease 0s;
+    display: inline-block;
+    cursor: pointer;
+}
+.course-custome-btn:hover {
+    color: #444444;
+    border-color: #444444;
+    cursor: pointer !important;
+}
+
+.submit-btn-section{ width:96%; }
+
+@media (min-width: 320px) and (max-width: 640px) {
+	.course-main-section, .course-personal-detail-section { padding: 20px;	}	
+ 	.notifiacation-section{ min-height: 50px; }
+	.course_amount_description{ font-size:17px;	} 
+	.course-price-box-section .course-price-box {    width: 80px; }
+	.course-price-input {    max-width: 225px !important; }
+	.course-checkbox .container-chk { font-size:16px;	}  	
+	.course-header-section h4 { font-size:17px; }
+	.course-data-form label { margin-bottom:2px; }
+	.course-form-control{ padding: 8px !important; }
+    .course-custome-btn { padding: 10px 25px; }
+    .submit-btn-section {    width: 100%; }
+}
+
+@media (min-width:768px){	
+	.course-form-row .custome-half-div {
+		padding-right: 5px;
+		padding-left: 5px;
+		-webkit-box-flex: 0;
+		-ms-flex: 0 0 47%;
+		flex: 0 0 47%;
+		max-width: 50%;
+	}	
+    
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+	.course-main-section, .course-personal-detail-section { padding: 30px;	}		
+	.course_amount_description{ font-size:15px;	} 
+    .submit-btn-section {    width: 100%; }
+    .course-form-control { width: 91%; }
+}
+
+@media (min-width: 980px) and (max-width: 1280px) {
+	
+    .submit-btn-section {    width: 97%; }
+    
+}
+
+.course-required-error {color:red; font-size:16px;}
